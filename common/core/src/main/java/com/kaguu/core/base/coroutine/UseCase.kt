@@ -1,10 +1,10 @@
-package com.kaguu.core.base
+package com.kaguu.core.base.coroutine
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flatMapConcat
 import kotlinx.coroutines.flow.flow
 
-abstract class BaseUseCase<Request, Result> {
+abstract class UseCase<Request, Result> {
 
     abstract fun checkRequest(request: Request): Request
 

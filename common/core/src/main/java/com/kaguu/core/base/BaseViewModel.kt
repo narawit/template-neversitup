@@ -10,7 +10,6 @@ import com.kaguu.core.utils.event.SingleLiveEvent
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.*
 import kotlin.coroutines.CoroutineContext
-import kotlin.coroutines.coroutineContext
 
 abstract class BaseViewModel : ViewModel() {
     protected val _loading = MutableSingleLiveEvent<Boolean>()

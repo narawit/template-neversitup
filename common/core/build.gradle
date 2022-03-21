@@ -17,4 +17,7 @@ dependencies {
     api Dependencies.gson
     api Dependencies.localization
     implementation Dependencies.retrofit
+    api 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    api 'io.reactivex.rxjava2:rxjava:2.2.21'
+    api 'io.reactivex.rxjava2:rxkotlin:2.4.0'
 }

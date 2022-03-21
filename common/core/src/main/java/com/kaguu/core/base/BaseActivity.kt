@@ -3,14 +3,11 @@ package com.kaguu.core.base
 import android.content.Context
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.viewbinding.ViewBinding
 import com.akexorcist.localizationactivity.ui.LocalizationActivity
 import com.kaguu.core.model.ErrorModel
 import com.kaguu.core.utils.MyContextWrapper
 import com.kaguu.core.utils.extension.observe
-import org.koin.androidx.viewmodel.ext.android.viewModel
 
 abstract class BaseActivity<T : ViewBinding> : LocalizationActivity() {
     protected lateinit var binding: T
