@@ -1,0 +1,14 @@
+package com.kaguu.test.coroutine.usecase
+
+import com.kaguu.core.base.BaseUseCase
+import com.kaguu.test.coroutine.repository.ExampleRepository
+
+
+class ExampleFetchDataUseCase(
+    private val repository: ExampleRepository
+) : BaseUseCase<Unit, String>() {
+    override fun checkRequest(request: Unit) = request
+
+    override suspend fun executeRepo(requestBody: Unit, isRetry: Boolean) =
+        repository.fetchData()
+}

@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.jetbrains.kotlin.android'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdk Config.compileSdkVersion
+    defaultConfig {
+        minSdk Config.minimumSdkVersion
+        targetSdk Config.targetSdkVersion
+
+        testInstrumentationRunner Config.testInstrumentation
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+    flavorDimensions "environment"
+    productFlavors {
+        prod {
+            dimension = 'environment'
+        }
+        dev {
+            dimension = 'environment'
+        }
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+dependencies {
+    implementation platform(Dependencies.firebaseBoM)
+}

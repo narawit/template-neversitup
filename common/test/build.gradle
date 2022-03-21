@@ -1,0 +1,20 @@
+apply from: '../../buildSrc/common/lib.gradle'
+
+dependencies {
+    implementation project(':common:core')
+    api Dependencies.mockk
+    api Dependencies.mockitoCore
+    api Dependencies.mockitoInline
+
+    testApi Dependencies.junit
+    androidTestApi Dependencies.junitTest
+    androidTestApi Dependencies.espressoTest
+    testApi Dependencies.coreTesting
+    testApi Dependencies.kotlinxCoroutinesTest
+    testApi Dependencies.turbine
+    testApi Dependencies.mockk
+    testApi Dependencies.mockitoCore
+    testApi Dependencies.mockitoInline
+    testApi Dependencies.mockitoKotlin
+    testApi Dependencies.kluentAndroid
+}

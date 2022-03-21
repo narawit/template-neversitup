@@ -1,0 +1,20 @@
+apply from: '../../buildSrc/common/lib.gradle'
+
+dependencies {
+    api Dependencies.androidCore
+    api Dependencies.androidAppcompat
+    api Dependencies.material
+    api Dependencies.activity
+    api Dependencies.fragment
+    api Dependencies.navigationFragment
+    api Dependencies.navigationUI
+    api Dependencies.lifecycleRuntime
+    api Dependencies.lifecycleViewModel
+    api Dependencies.lifecycleLiveData
+    api Dependencies.multiDex
+    api Dependencies.koin
+    api Dependencies.timber
+    api Dependencies.gson
+    api Dependencies.localization
+    implementation Dependencies.retrofit
+}

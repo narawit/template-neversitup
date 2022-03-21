@@ -1,0 +1,64 @@
+//plugins {
+//    id 'com.android.application'
+//    id 'org.jetbrains.kotlin.android'
+////    id 'com.google.gms.google-services'
+////    id 'com.google.firebase.crashlytics'
+//}
+//
+//android {
+//    compileSdk Config.compileSdkVersion
+//
+//    signingConfigs {
+//        key {
+//            keyAlias '...'
+//            keyPassword '...'
+//            storeFile file('...')
+//            storePassword '...'
+//        }
+//    }
+//
+//    defaultConfig {
+//        applicationId Config.applicationId
+//        minSdk Config.minimumSdkVersion
+//        targetSdk Config.targetSdkVersion
+//        versionCode Config.versionCode
+//        versionName Config.versionName
+//        testInstrumentationRunner Config.testInstrumentation
+//    }
+//
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//        }
+//    }
+//    compileOptions {
+//        sourceCompatibility JavaVersion.VERSION_11
+//        targetCompatibility JavaVersion.VERSION_11
+//    }
+//    kotlinOptions {
+//        jvmTarget = '11'
+//    }
+//    flavorDimensions "environment"
+//    productFlavors {
+//        prod {
+//            signingConfig signingConfigs.key
+//            dimension = 'environment'
+//        }
+//        dev {
+//            signingConfig signingConfigs.key
+//            applicationIdSuffix ".dev"
+//            dimension = 'environment'
+//        }
+//    }
+//    buildFeatures {
+//        viewBinding true
+//    }
+//
+//}
+//
+//dependencies {
+//    implementation project(':common:core')
+//
+//    implementation Dependencies.crashlytics
+//}

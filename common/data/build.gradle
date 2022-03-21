@@ -1,0 +1,12 @@
+apply from: '../../buildSrc/common/lib.gradle'
+
+dependencies {
+    implementation project(":common:core")
+
+    api Dependencies.retrofit
+    api Dependencies.retrofitGsonConverter
+    api Dependencies.httpLogging
+    api Dependencies.roomRuntime
+    api Dependencies.roomKtx
+    kapt Dependencies.roomCompiler
+}
